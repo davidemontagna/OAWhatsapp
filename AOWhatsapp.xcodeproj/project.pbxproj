@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8EB387FA28A402D200B0D207 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB387F928A402D200B0D207 /* AppDelegate.swift */; };
+		8EB387FC28A402D200B0D207 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB387FB28A402D200B0D207 /* SceneDelegate.swift */; };
+		8EB387FE28A402D200B0D207 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB387FD28A402D200B0D207 /* ViewController.swift */; };
+		8EB3880128A402D200B0D207 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB387FF28A402D200B0D207 /* Main.storyboard */; };
+		8EB3880328A402D400B0D207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EB3880228A402D400B0D207 /* Assets.xcassets */; };
+		8EB3880628A402D400B0D207 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB3880428A402D400B0D207 /* LaunchScreen.storyboard */; };
+		8EB3881128A402D400B0D207 /* AOWhatsappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3881028A402D400B0D207 /* AOWhatsappTests.swift */; };
+		8EB3881B28A402D400B0D207 /* AOWhatsappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3881A28A402D400B0D207 /* AOWhatsappUITests.swift */; };
+		8EB3881D28A402D400B0D207 /* AOWhatsappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3881C28A402D400B0D207 /* AOWhatsappUITestsLaunchTests.swift */; };
+		8EB3883E28A404E100B0D207 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3883D28A404E100B0D207 /* User.swift */; };
+		8EB3884028A4076600B0D207 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3883F28A4076600B0D207 /* Message.swift */; };
+		8EB3884328A4087F00B0D207 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3884228A4087F00B0D207 /* UserResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8EB3880D28A402D400B0D207 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EB387EE28A402D100B0D207 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EB387F528A402D200B0D207;
+			remoteInfo = AOWhatsapp;
+		};
+		8EB3881728A402D400B0D207 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EB387EE28A402D100B0D207 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EB387F528A402D200B0D207;
+			remoteInfo = AOWhatsapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8EB387F628A402D200B0D207 /* AOWhatsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOWhatsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EB387F928A402D200B0D207 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8EB387FB28A402D200B0D207 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8EB387FD28A402D200B0D207 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8EB3880028A402D200B0D207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8EB3880228A402D400B0D207 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8EB3880528A402D400B0D207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8EB3880728A402D400B0D207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EB3880C28A402D400B0D207 /* AOWhatsappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AOWhatsappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EB3881028A402D400B0D207 /* AOWhatsappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOWhatsappTests.swift; sourceTree = "<group>"; };
+		8EB3881628A402D400B0D207 /* AOWhatsappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AOWhatsappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EB3881A28A402D400B0D207 /* AOWhatsappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOWhatsappUITests.swift; sourceTree = "<group>"; };
+		8EB3881C28A402D400B0D207 /* AOWhatsappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOWhatsappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8EB3883D28A404E100B0D207 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8EB3883F28A4076600B0D207 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		8EB3884228A4087F00B0D207 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EB387F328A402D200B0D207 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EB3880928A402D400B0D207 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EB3881328A402D400B0D207 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8EB387ED28A402D100B0D207 = {
+			isa = PBXGroup;
+			children = (
+				8EB387F828A402D200B0D207 /* AOWhatsapp */,
+				8EB3880F28A402D400B0D207 /* AOWhatsappTests */,
+				8EB3881928A402D400B0D207 /* AOWhatsappUITests */,
+				8EB387F728A402D200B0D207 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8EB387F728A402D200B0D207 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EB387F628A402D200B0D207 /* AOWhatsapp.app */,
+				8EB3880C28A402D400B0D207 /* AOWhatsappTests.xctest */,
+				8EB3881628A402D400B0D207 /* AOWhatsappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EB387F828A402D200B0D207 /* AOWhatsapp */ = {
+			isa = PBXGroup;
+			children = (
+				8EB3882928A403BD00B0D207 /* Extensions */,
+				8EB3882A28A403D400B0D207 /* Models */,
+				8EB3882B28A403DF00B0D207 /* UI */,
+				8EB387F928A402D200B0D207 /* AppDelegate.swift */,
+				8EB387FB28A402D200B0D207 /* SceneDelegate.swift */,
+				8EB387FD28A402D200B0D207 /* ViewController.swift */,
+				8EB387FF28A402D200B0D207 /* Main.storyboard */,
+				8EB3880228A402D400B0D207 /* Assets.xcassets */,
+				8EB3880428A402D400B0D207 /* LaunchScreen.storyboard */,
+				8EB3880728A402D400B0D207 /* Info.plist */,
+			);
+			path = AOWhatsapp;
+			sourceTree = "<group>";
+		};
+		8EB3880F28A402D400B0D207 /* AOWhatsappTests */ = {
+			isa = PBXGroup;
+			children = (
+				8EB3881028A402D400B0D207 /* AOWhatsappTests.swift */,
+			);
+			path = AOWhatsappTests;
+			sourceTree = "<group>";
+		};
+		8EB3881928A402D400B0D207 /* AOWhatsappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8EB3881A28A402D400B0D207 /* AOWhatsappUITests.swift */,
+				8EB3881C28A402D400B0D207 /* AOWhatsappUITestsLaunchTests.swift */,
+			);
+			path = AOWhatsappUITests;
+			sourceTree = "<group>";
+		};
+		8EB3882928A403BD00B0D207 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8EB3882A28A403D400B0D207 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8EB3884128A4086000B0D207 /* Responses */,
+				8EB3883D28A404E100B0D207 /* User.swift */,
+				8EB3883F28A4076600B0D207 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8EB3882B28A403DF00B0D207 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8EB3882C28A403F500B0D207 /* Scenes */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8EB3882C28A403F500B0D207 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8EB3882E28A4041400B0D207 /* Detail */,
+				8EB3882D28A403FD00B0D207 /* List */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8EB3882D28A403FD00B0D207 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				8EB3883428A4045300B0D207 /* ViewController */,
+				8EB3883328A4044A00B0D207 /* ViewModel */,
+				8EB3883228A4044400B0D207 /* Adapter */,
+				8EB3883128A4043A00B0D207 /* View */,
+				8EB3883028A4043200B0D207 /* UIItems */,
+				8EB3882F28A4042400B0D207 /* UseCases */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		8EB3882E28A4041400B0D207 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				8EB3883C28A4049D00B0D207 /* ViewController */,
+				8EB3883B28A4049400B0D207 /* ViewModel */,
+				8EB3883A28A4048C00B0D207 /* Adapter */,
+				8EB3883828A4047D00B0D207 /* View */,
+				8EB3883728A4047500B0D207 /* UIItems */,
+				8EB3883628A4046E00B0D207 /* UseCases */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		8EB3882F28A4042400B0D207 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		8EB3883028A4043200B0D207 /* UIItems */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIItems;
+			sourceTree = "<group>";
+		};
+		8EB3883128A4043A00B0D207 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8EB3883528A4045F00B0D207 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8EB3883228A4044400B0D207 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		8EB3883328A4044A00B0D207 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8EB3883428A4045300B0D207 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8EB3883528A4045F00B0D207 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8EB3883628A4046E00B0D207 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		8EB3883728A4047500B0D207 /* UIItems */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIItems;
+			sourceTree = "<group>";
+		};
+		8EB3883828A4047D00B0D207 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8EB3883928A4048500B0D207 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8EB3883928A4048500B0D207 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8EB3883A28A4048C00B0D207 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		8EB3883B28A4049400B0D207 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8EB3883C28A4049D00B0D207 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8EB3884128A4086000B0D207 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				8EB3884228A4087F00B0D207 /* UserResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8EB387F528A402D200B0D207 /* AOWhatsapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EB3882028A402D400B0D207 /* Build configuration list for PBXNativeTarget "AOWhatsapp" */;
+			buildPhases = (
+				8EB387F228A402D200B0D207 /* Sources */,
+				8EB387F328A402D200B0D207 /* Frameworks */,
+				8EB387F428A402D200B0D207 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AOWhatsapp;
+			productName = AOWhatsapp;
+			productReference = 8EB387F628A402D200B0D207 /* AOWhatsapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8EB3880B28A402D400B0D207 /* AOWhatsappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EB3882328A402D400B0D207 /* Build configuration list for PBXNativeTarget "AOWhatsappTests" */;
+			buildPhases = (
+				8EB3880828A402D400B0D207 /* Sources */,
+				8EB3880928A402D400B0D207 /* Frameworks */,
+				8EB3880A28A402D400B0D207 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EB3880E28A402D400B0D207 /* PBXTargetDependency */,
+			);
+			name = AOWhatsappTests;
+			productName = AOWhatsappTests;
+			productReference = 8EB3880C28A402D400B0D207 /* AOWhatsappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8EB3881528A402D400B0D207 /* AOWhatsappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EB3882628A402D400B0D207 /* Build configuration list for PBXNativeTarget "AOWhatsappUITests" */;
+			buildPhases = (
+				8EB3881228A402D400B0D207 /* Sources */,
+				8EB3881328A402D400B0D207 /* Frameworks */,
+				8EB3881428A402D400B0D207 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EB3881828A402D400B0D207 /* PBXTargetDependency */,
+			);
+			name = AOWhatsappUITests;
+			productName = AOWhatsappUITests;
+			productReference = 8EB3881628A402D400B0D207 /* AOWhatsappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8EB387EE28A402D100B0D207 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					8EB387F528A402D200B0D207 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					8EB3880B28A402D400B0D207 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 8EB387F528A402D200B0D207;
+					};
+					8EB3881528A402D400B0D207 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 8EB387F528A402D200B0D207;
+					};
+				};
+			};
+			buildConfigurationList = 8EB387F128A402D100B0D207 /* Build configuration list for PBXProject "AOWhatsapp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8EB387ED28A402D100B0D207;
+			productRefGroup = 8EB387F728A402D200B0D207 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8EB387F528A402D200B0D207 /* AOWhatsapp */,
+				8EB3880B28A402D400B0D207 /* AOWhatsappTests */,
+				8EB3881528A402D400B0D207 /* AOWhatsappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8EB387F428A402D200B0D207 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB3880628A402D400B0D207 /* LaunchScreen.storyboard in Resources */,
+				8EB3880328A402D400B0D207 /* Assets.xcassets in Resources */,
+				8EB3880128A402D200B0D207 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EB3880A28A402D400B0D207 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EB3881428A402D400B0D207 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EB387F228A402D200B0D207 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB3883E28A404E100B0D207 /* User.swift in Sources */,
+				8EB387FE28A402D200B0D207 /* ViewController.swift in Sources */,
+				8EB3884028A4076600B0D207 /* Message.swift in Sources */,
+				8EB387FA28A402D200B0D207 /* AppDelegate.swift in Sources */,
+				8EB387FC28A402D200B0D207 /* SceneDelegate.swift in Sources */,
+				8EB3884328A4087F00B0D207 /* UserResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EB3880828A402D400B0D207 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB3881128A402D400B0D207 /* AOWhatsappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EB3881228A402D400B0D207 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB3881D28A402D400B0D207 /* AOWhatsappUITestsLaunchTests.swift in Sources */,
+				8EB3881B28A402D400B0D207 /* AOWhatsappUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8EB3880E28A402D400B0D207 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EB387F528A402D200B0D207 /* AOWhatsapp */;
+			targetProxy = 8EB3880D28A402D400B0D207 /* PBXContainerItemProxy */;
+		};
+		8EB3881828A402D400B0D207 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EB387F528A402D200B0D207 /* AOWhatsapp */;
+			targetProxy = 8EB3881728A402D400B0D207 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8EB387FF28A402D200B0D207 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EB3880028A402D200B0D207 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8EB3880428A402D400B0D207 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EB3880528A402D400B0D207 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8EB3881E28A402D400B0D207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8EB3881F28A402D400B0D207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8EB3882128A402D400B0D207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AOWhatsapp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AOWhatsapp.AOWhatsapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8EB3882228A402D400B0D207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AOWhatsapp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AOWhatsapp.AOWhatsapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8EB3882428A402D400B0D207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AOWhatsapp.AOWhatsappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AOWhatsapp.app/AOWhatsapp";
+			};
+			name = Debug;
+		};
+		8EB3882528A402D400B0D207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AOWhatsapp.AOWhatsappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AOWhatsapp.app/AOWhatsapp";
+			};
+			name = Release;
+		};
+		8EB3882728A402D400B0D207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AOWhatsapp.AOWhatsappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AOWhatsapp;
+			};
+			name = Debug;
+		};
+		8EB3882828A402D400B0D207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AOWhatsapp.AOWhatsappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AOWhatsapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8EB387F128A402D100B0D207 /* Build configuration list for PBXProject "AOWhatsapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EB3881E28A402D400B0D207 /* Debug */,
+				8EB3881F28A402D400B0D207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EB3882028A402D400B0D207 /* Build configuration list for PBXNativeTarget "AOWhatsapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EB3882128A402D400B0D207 /* Debug */,
+				8EB3882228A402D400B0D207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EB3882328A402D400B0D207 /* Build configuration list for PBXNativeTarget "AOWhatsappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EB3882428A402D400B0D207 /* Debug */,
+				8EB3882528A402D400B0D207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EB3882628A402D400B0D207 /* Build configuration list for PBXNativeTarget "AOWhatsappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EB3882728A402D400B0D207 /* Debug */,
+				8EB3882828A402D400B0D207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8EB387EE28A402D100B0D207 /* Project object */;
+}
