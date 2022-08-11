@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79CC5E5636514EF1DADCCB0E /* Pods_AOWhatsapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A6651D445DEEB57B06398B /* Pods_AOWhatsapp.framework */; };
+		8E7A380F28A552EA005B0C72 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A380E28A552EA005B0C72 /* Date+Extensions.swift */; };
+		8E9C98BA28A4F33000DF6E82 /* ChatListViewModelUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9C98B928A4F33000DF6E82 /* ChatListViewModelUseCases.swift */; };
 		8EB387FA28A402D200B0D207 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB387F928A402D200B0D207 /* AppDelegate.swift */; };
 		8EB387FC28A402D200B0D207 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB387FB28A402D200B0D207 /* SceneDelegate.swift */; };
-		8EB387FE28A402D200B0D207 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB387FD28A402D200B0D207 /* ViewController.swift */; };
+		8EB387FE28A402D200B0D207 /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB387FD28A402D200B0D207 /* ChatListViewController.swift */; };
 		8EB3880128A402D200B0D207 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB387FF28A402D200B0D207 /* Main.storyboard */; };
 		8EB3880328A402D400B0D207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EB3880228A402D400B0D207 /* Assets.xcassets */; };
 		8EB3880628A402D400B0D207 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB3880428A402D400B0D207 /* LaunchScreen.storyboard */; };
@@ -18,7 +21,14 @@
 		8EB3881D28A402D400B0D207 /* AOWhatsappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3881C28A402D400B0D207 /* AOWhatsappUITestsLaunchTests.swift */; };
 		8EB3883E28A404E100B0D207 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3883D28A404E100B0D207 /* User.swift */; };
 		8EB3884028A4076600B0D207 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3883F28A4076600B0D207 /* Message.swift */; };
-		8EB3884328A4087F00B0D207 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3884228A4087F00B0D207 /* UserResponse.swift */; };
+		8EB3884528A4170B00B0D207 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3884428A4170B00B0D207 /* UITableView+Extensions.swift */; };
+		8EB3884728A4177900B0D207 /* ChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3884628A4177900B0D207 /* ChatListViewModel.swift */; };
+		8EB3884928A4187600B0D207 /* ChatListAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3884828A4187600B0D207 /* ChatListAdapter.swift */; };
+		8EB3884C28A418D200B0D207 /* ChatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3884A28A418D200B0D207 /* ChatListCell.swift */; };
+		8EB3884D28A418D200B0D207 /* ChatListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EB3884B28A418D200B0D207 /* ChatListCell.xib */; };
+		8EB3885028A4191E00B0D207 /* NewGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3884E28A4191E00B0D207 /* NewGroupCell.swift */; };
+		8EB3885128A4191E00B0D207 /* NewGroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EB3884F28A4191E00B0D207 /* NewGroupCell.xib */; };
+		8EB3885328A41A9500B0D207 /* ChatListCellUIItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3885228A41A9500B0D207 /* ChatListCellUIItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +49,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20EF6249CE8D783579953628 /* Pods-AOWhatsapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOWhatsapp.release.xcconfig"; path = "Target Support Files/Pods-AOWhatsapp/Pods-AOWhatsapp.release.xcconfig"; sourceTree = "<group>"; };
+		38A6651D445DEEB57B06398B /* Pods_AOWhatsapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AOWhatsapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B954046D39F87C670E5E338 /* Pods-AOWhatsapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOWhatsapp.debug.xcconfig"; path = "Target Support Files/Pods-AOWhatsapp/Pods-AOWhatsapp.debug.xcconfig"; sourceTree = "<group>"; };
+		8E7A380E28A552EA005B0C72 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		8E9C98B928A4F33000DF6E82 /* ChatListViewModelUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModelUseCases.swift; sourceTree = "<group>"; };
 		8EB387F628A402D200B0D207 /* AOWhatsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOWhatsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB387F928A402D200B0D207 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EB387FB28A402D200B0D207 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8EB387FD28A402D200B0D207 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8EB387FD28A402D200B0D207 /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
 		8EB3880028A402D200B0D207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8EB3880228A402D400B0D207 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EB3880528A402D400B0D207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,7 +69,14 @@
 		8EB3881C28A402D400B0D207 /* AOWhatsappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOWhatsappUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8EB3883D28A404E100B0D207 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8EB3883F28A4076600B0D207 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		8EB3884228A4087F00B0D207 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		8EB3884428A4170B00B0D207 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		8EB3884628A4177900B0D207 /* ChatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModel.swift; sourceTree = "<group>"; };
+		8EB3884828A4187600B0D207 /* ChatListAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListAdapter.swift; sourceTree = "<group>"; };
+		8EB3884A28A418D200B0D207 /* ChatListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListCell.swift; sourceTree = "<group>"; };
+		8EB3884B28A418D200B0D207 /* ChatListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatListCell.xib; sourceTree = "<group>"; };
+		8EB3884E28A4191E00B0D207 /* NewGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupCell.swift; sourceTree = "<group>"; };
+		8EB3884F28A4191E00B0D207 /* NewGroupCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewGroupCell.xib; sourceTree = "<group>"; };
+		8EB3885228A41A9500B0D207 /* ChatListCellUIItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListCellUIItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79CC5E5636514EF1DADCCB0E /* Pods_AOWhatsapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +112,8 @@
 				8EB3880F28A402D400B0D207 /* AOWhatsappTests */,
 				8EB3881928A402D400B0D207 /* AOWhatsappUITests */,
 				8EB387F728A402D200B0D207 /* Products */,
+				928D1BCA117C26B378C022F8 /* Pods */,
+				BDDA0CC8E3146175D02D75CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,7 +135,6 @@
 				8EB3882B28A403DF00B0D207 /* UI */,
 				8EB387F928A402D200B0D207 /* AppDelegate.swift */,
 				8EB387FB28A402D200B0D207 /* SceneDelegate.swift */,
-				8EB387FD28A402D200B0D207 /* ViewController.swift */,
 				8EB387FF28A402D200B0D207 /* Main.storyboard */,
 				8EB3880228A402D400B0D207 /* Assets.xcassets */,
 				8EB3880428A402D400B0D207 /* LaunchScreen.storyboard */,
@@ -139,6 +163,8 @@
 		8EB3882928A403BD00B0D207 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8EB3884428A4170B00B0D207 /* UITableView+Extensions.swift */,
+				8E7A380E28A552EA005B0C72 /* Date+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -146,7 +172,6 @@
 		8EB3882A28A403D400B0D207 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8EB3884128A4086000B0D207 /* Responses */,
 				8EB3883D28A404E100B0D207 /* User.swift */,
 				8EB3883F28A4076600B0D207 /* Message.swift */,
 			);
@@ -199,6 +224,7 @@
 		8EB3882F28A4042400B0D207 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				8E9C98B928A4F33000DF6E82 /* ChatListViewModelUseCases.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -206,6 +232,7 @@
 		8EB3883028A4043200B0D207 /* UIItems */ = {
 			isa = PBXGroup;
 			children = (
+				8EB3885228A41A9500B0D207 /* ChatListCellUIItem.swift */,
 			);
 			path = UIItems;
 			sourceTree = "<group>";
@@ -221,6 +248,7 @@
 		8EB3883228A4044400B0D207 /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
+				8EB3884828A4187600B0D207 /* ChatListAdapter.swift */,
 			);
 			path = Adapter;
 			sourceTree = "<group>";
@@ -228,6 +256,7 @@
 		8EB3883328A4044A00B0D207 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8EB3884628A4177900B0D207 /* ChatListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -235,6 +264,7 @@
 		8EB3883428A4045300B0D207 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8EB387FD28A402D200B0D207 /* ChatListViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -242,6 +272,10 @@
 		8EB3883528A4045F00B0D207 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				8EB3884A28A418D200B0D207 /* ChatListCell.swift */,
+				8EB3884B28A418D200B0D207 /* ChatListCell.xib */,
+				8EB3884E28A4191E00B0D207 /* NewGroupCell.swift */,
+				8EB3884F28A4191E00B0D207 /* NewGroupCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -296,12 +330,21 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		8EB3884128A4086000B0D207 /* Responses */ = {
+		928D1BCA117C26B378C022F8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8EB3884228A4087F00B0D207 /* UserResponse.swift */,
+				5B954046D39F87C670E5E338 /* Pods-AOWhatsapp.debug.xcconfig */,
+				20EF6249CE8D783579953628 /* Pods-AOWhatsapp.release.xcconfig */,
 			);
-			path = Responses;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BDDA0CC8E3146175D02D75CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38A6651D445DEEB57B06398B /* Pods_AOWhatsapp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,9 +354,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EB3882028A402D400B0D207 /* Build configuration list for PBXNativeTarget "AOWhatsapp" */;
 			buildPhases = (
+				2C21705D205B991EB352BC7B /* [CP] Check Pods Manifest.lock */,
 				8EB387F228A402D200B0D207 /* Sources */,
 				8EB387F328A402D200B0D207 /* Frameworks */,
 				8EB387F428A402D200B0D207 /* Resources */,
+				2BD1D42A8828E02439398759 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -408,7 +453,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EB3885128A4191E00B0D207 /* NewGroupCell.xib in Resources */,
 				8EB3880628A402D400B0D207 /* LaunchScreen.storyboard in Resources */,
+				8EB3884D28A418D200B0D207 /* ChatListCell.xib in Resources */,
 				8EB3880328A402D400B0D207 /* Assets.xcassets in Resources */,
 				8EB3880128A402D200B0D207 /* Main.storyboard in Resources */,
 			);
@@ -430,17 +477,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2BD1D42A8828E02439398759 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AOWhatsapp/Pods-AOWhatsapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AOWhatsapp/Pods-AOWhatsapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AOWhatsapp/Pods-AOWhatsapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C21705D205B991EB352BC7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AOWhatsapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8EB387F228A402D200B0D207 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8EB3883E28A404E100B0D207 /* User.swift in Sources */,
-				8EB387FE28A402D200B0D207 /* ViewController.swift in Sources */,
+				8EB3884528A4170B00B0D207 /* UITableView+Extensions.swift in Sources */,
+				8EB3884728A4177900B0D207 /* ChatListViewModel.swift in Sources */,
+				8E7A380F28A552EA005B0C72 /* Date+Extensions.swift in Sources */,
+				8E9C98BA28A4F33000DF6E82 /* ChatListViewModelUseCases.swift in Sources */,
+				8EB387FE28A402D200B0D207 /* ChatListViewController.swift in Sources */,
 				8EB3884028A4076600B0D207 /* Message.swift in Sources */,
+				8EB3884C28A418D200B0D207 /* ChatListCell.swift in Sources */,
+				8EB3884928A4187600B0D207 /* ChatListAdapter.swift in Sources */,
+				8EB3885028A4191E00B0D207 /* NewGroupCell.swift in Sources */,
+				8EB3885328A41A9500B0D207 /* ChatListCellUIItem.swift in Sources */,
 				8EB387FA28A402D200B0D207 /* AppDelegate.swift in Sources */,
 				8EB387FC28A402D200B0D207 /* SceneDelegate.swift in Sources */,
-				8EB3884328A4087F00B0D207 /* UserResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +708,7 @@
 		};
 		8EB3882128A402D400B0D207 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B954046D39F87C670E5E338 /* Pods-AOWhatsapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -639,6 +736,7 @@
 		};
 		8EB3882228A402D400B0D207 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20EF6249CE8D783579953628 /* Pods-AOWhatsapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

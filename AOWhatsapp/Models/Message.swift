@@ -11,7 +11,7 @@ struct Message {
     let id: Int
     let userId: Int
     let text: String
-    let imagesUrl: [URL]?
+    let imagesUrl: [String]?
     let date: Date
     let type: MessageType
     let status: MessageStatus

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="73" id="KGk-i7-Jjw" customClass="NewGroupCell" customModule="AOWhatsapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mwh-my-Hfa">
+                        <rect key="frame" x="15" y="15" width="150" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="JFg-2o-vMV"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Liste Broadcast"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjG-rb-m3X">
+                        <rect key="frame" x="227" y="21" width="140" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="140" id="7gS-6V-AmP"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Nuovo gruppo"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AjG-rb-m3X" firstAttribute="centerY" secondItem="Mwh-my-Hfa" secondAttribute="centerY" id="Gx9-m2-L2J"/>
+                    <constraint firstItem="Mwh-my-Hfa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="jGD-xt-KQU"/>
+                    <constraint firstAttribute="trailing" secondItem="AjG-rb-m3X" secondAttribute="trailing" constant="15" id="ugJ-lJ-ADS"/>
+                    <constraint firstAttribute="bottom" secondItem="Mwh-my-Hfa" secondAttribute="bottom" constant="15" id="vId-jT-6b0"/>
+                    <constraint firstItem="Mwh-my-Hfa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="xb9-3q-zKT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="182.60869565217394" y="149.66517857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

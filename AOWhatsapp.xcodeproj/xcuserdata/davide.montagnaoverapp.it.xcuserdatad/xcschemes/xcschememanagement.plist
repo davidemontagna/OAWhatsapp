@@ -7,7 +7,25 @@
 		<key>AOWhatsapp.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>8EB387F528A402D200B0D207</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8EB3880B28A402D400B0D207</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8EB3881528A402D400B0D207</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

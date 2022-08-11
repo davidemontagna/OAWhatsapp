@@ -11,6 +11,6 @@ import UIKit
 struct User {
     let id: Int
     let name: String
-    let image: UIImage
-    let messages: [Message]
+    let image: String
+    let messages: [Message]?
 }
