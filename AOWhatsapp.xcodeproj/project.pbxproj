@@ -8,7 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		79CC5E5636514EF1DADCCB0E /* Pods_AOWhatsapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A6651D445DEEB57B06398B /* Pods_AOWhatsapp.framework */; };
+		8E3EA53528A63F4000AAB03C /* SentMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3EA53328A63F4000AAB03C /* SentMessageCell.swift */; };
+		8E3EA53628A63F4000AAB03C /* SentMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3EA53428A63F4000AAB03C /* SentMessageCell.xib */; };
+		8E3EA54028A6444F00AAB03C /* ChatHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3EA53E28A6444F00AAB03C /* ChatHeaderCell.swift */; };
+		8E3EA54128A6444F00AAB03C /* ChatHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3EA53F28A6444F00AAB03C /* ChatHeaderCell.xib */; };
+		8E3EA54428A6AA9900AAB03C /* ReceivedMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3EA54228A6AA9800AAB03C /* ReceivedMessageCell.xib */; };
+		8E3EA54528A6AA9900AAB03C /* ReceivedMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3EA54328A6AA9800AAB03C /* ReceivedMessageCell.swift */; };
 		8E7A380F28A552EA005B0C72 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A380E28A552EA005B0C72 /* Date+Extensions.swift */; };
+		8E7A381128A56589005B0C72 /* ChatDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A381028A56589005B0C72 /* ChatDetailViewController.swift */; };
+		8E7A381328A568DB005B0C72 /* ChatDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A381228A568DB005B0C72 /* ChatDetailViewModel.swift */; };
+		8E7A381528A5690E005B0C72 /* ChatDetailAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A381428A5690E005B0C72 /* ChatDetailAdapter.swift */; };
+		8E7A381728A56B19005B0C72 /* ChatDetailUIItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A381628A56B19005B0C72 /* ChatDetailUIItem.swift */; };
 		8E9C98BA28A4F33000DF6E82 /* ChatListViewModelUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9C98B928A4F33000DF6E82 /* ChatListViewModelUseCases.swift */; };
 		8EB387FA28A402D200B0D207 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB387F928A402D200B0D207 /* AppDelegate.swift */; };
 		8EB387FC28A402D200B0D207 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB387FB28A402D200B0D207 /* SceneDelegate.swift */; };
@@ -52,7 +62,17 @@
 		20EF6249CE8D783579953628 /* Pods-AOWhatsapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOWhatsapp.release.xcconfig"; path = "Target Support Files/Pods-AOWhatsapp/Pods-AOWhatsapp.release.xcconfig"; sourceTree = "<group>"; };
 		38A6651D445DEEB57B06398B /* Pods_AOWhatsapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AOWhatsapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B954046D39F87C670E5E338 /* Pods-AOWhatsapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOWhatsapp.debug.xcconfig"; path = "Target Support Files/Pods-AOWhatsapp/Pods-AOWhatsapp.debug.xcconfig"; sourceTree = "<group>"; };
+		8E3EA53328A63F4000AAB03C /* SentMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentMessageCell.swift; sourceTree = "<group>"; };
+		8E3EA53428A63F4000AAB03C /* SentMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SentMessageCell.xib; sourceTree = "<group>"; };
+		8E3EA53E28A6444F00AAB03C /* ChatHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHeaderCell.swift; sourceTree = "<group>"; };
+		8E3EA53F28A6444F00AAB03C /* ChatHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatHeaderCell.xib; sourceTree = "<group>"; };
+		8E3EA54228A6AA9800AAB03C /* ReceivedMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReceivedMessageCell.xib; sourceTree = "<group>"; };
+		8E3EA54328A6AA9800AAB03C /* ReceivedMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivedMessageCell.swift; sourceTree = "<group>"; };
 		8E7A380E28A552EA005B0C72 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		8E7A381028A56589005B0C72 /* ChatDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailViewController.swift; sourceTree = "<group>"; };
+		8E7A381228A568DB005B0C72 /* ChatDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailViewModel.swift; sourceTree = "<group>"; };
+		8E7A381428A5690E005B0C72 /* ChatDetailAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailAdapter.swift; sourceTree = "<group>"; };
+		8E7A381628A56B19005B0C72 /* ChatDetailUIItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailUIItem.swift; sourceTree = "<group>"; };
 		8E9C98B928A4F33000DF6E82 /* ChatListViewModelUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModelUseCases.swift; sourceTree = "<group>"; };
 		8EB387F628A402D200B0D207 /* AOWhatsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOWhatsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB387F928A402D200B0D207 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -290,6 +310,7 @@
 		8EB3883728A4047500B0D207 /* UIItems */ = {
 			isa = PBXGroup;
 			children = (
+				8E7A381628A56B19005B0C72 /* ChatDetailUIItem.swift */,
 			);
 			path = UIItems;
 			sourceTree = "<group>";
@@ -305,6 +326,12 @@
 		8EB3883928A4048500B0D207 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				8E3EA53328A63F4000AAB03C /* SentMessageCell.swift */,
+				8E3EA53428A63F4000AAB03C /* SentMessageCell.xib */,
+				8E3EA54328A6AA9800AAB03C /* ReceivedMessageCell.swift */,
+				8E3EA54228A6AA9800AAB03C /* ReceivedMessageCell.xib */,
+				8E3EA53E28A6444F00AAB03C /* ChatHeaderCell.swift */,
+				8E3EA53F28A6444F00AAB03C /* ChatHeaderCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -312,6 +339,7 @@
 		8EB3883A28A4048C00B0D207 /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
+				8E7A381428A5690E005B0C72 /* ChatDetailAdapter.swift */,
 			);
 			path = Adapter;
 			sourceTree = "<group>";
@@ -319,6 +347,7 @@
 		8EB3883B28A4049400B0D207 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8E7A381228A568DB005B0C72 /* ChatDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -326,6 +355,7 @@
 		8EB3883C28A4049D00B0D207 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8E7A381028A56589005B0C72 /* ChatDetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -454,7 +484,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EB3885128A4191E00B0D207 /* NewGroupCell.xib in Resources */,
+				8E3EA53628A63F4000AAB03C /* SentMessageCell.xib in Resources */,
 				8EB3880628A402D400B0D207 /* LaunchScreen.storyboard in Resources */,
+				8E3EA54128A6444F00AAB03C /* ChatHeaderCell.xib in Resources */,
+				8E3EA54428A6AA9900AAB03C /* ReceivedMessageCell.xib in Resources */,
 				8EB3884D28A418D200B0D207 /* ChatListCell.xib in Resources */,
 				8EB3880328A402D400B0D207 /* Assets.xcassets in Resources */,
 				8EB3880128A402D200B0D207 /* Main.storyboard in Resources */,
@@ -524,17 +557,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E3EA54528A6AA9900AAB03C /* ReceivedMessageCell.swift in Sources */,
+				8E7A381728A56B19005B0C72 /* ChatDetailUIItem.swift in Sources */,
 				8EB3883E28A404E100B0D207 /* User.swift in Sources */,
+				8E7A381128A56589005B0C72 /* ChatDetailViewController.swift in Sources */,
 				8EB3884528A4170B00B0D207 /* UITableView+Extensions.swift in Sources */,
 				8EB3884728A4177900B0D207 /* ChatListViewModel.swift in Sources */,
+				8E3EA53528A63F4000AAB03C /* SentMessageCell.swift in Sources */,
 				8E7A380F28A552EA005B0C72 /* Date+Extensions.swift in Sources */,
 				8E9C98BA28A4F33000DF6E82 /* ChatListViewModelUseCases.swift in Sources */,
+				8E7A381528A5690E005B0C72 /* ChatDetailAdapter.swift in Sources */,
 				8EB387FE28A402D200B0D207 /* ChatListViewController.swift in Sources */,
 				8EB3884028A4076600B0D207 /* Message.swift in Sources */,
+				8E3EA54028A6444F00AAB03C /* ChatHeaderCell.swift in Sources */,
 				8EB3884C28A418D200B0D207 /* ChatListCell.swift in Sources */,
 				8EB3884928A4187600B0D207 /* ChatListAdapter.swift in Sources */,
 				8EB3885028A4191E00B0D207 /* NewGroupCell.swift in Sources */,
 				8EB3885328A41A9500B0D207 /* ChatListCellUIItem.swift in Sources */,
+				8E7A381328A568DB005B0C72 /* ChatDetailViewModel.swift in Sources */,
 				8EB387FA28A402D200B0D207 /* AppDelegate.swift in Sources */,
 				8EB387FC28A402D200B0D207 /* SceneDelegate.swift in Sources */,
 			);

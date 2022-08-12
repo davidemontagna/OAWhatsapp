@@ -48,6 +48,10 @@ extension ChatListAdapter: UITableViewDataSource {
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        delegate?.onCellSelected(at: indexPath.row)
+    }
+    
 }
 
 extension ChatListAdapter: UITableViewDelegate {

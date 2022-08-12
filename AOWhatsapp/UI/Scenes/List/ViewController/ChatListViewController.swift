@@ -32,13 +32,20 @@ class ChatListViewController: UIViewController {
         tableView.delegate = adapter
         tableView.dataSource = adapter
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let user = sender as? User, let destination = segue.destination as? ChatDetailViewController {
+            destination.viewModel.detailChat = user
+            //destination.delegate = self
+        }
+    }
 }
 
 // MARK: - Extensions
 
 extension ChatListViewController: ChatListAdapterDelegate {
     func onCellSelected(at index: Int) {
-
+        viewModel.showDetail(for: index)
     }
 }
 
@@ -50,6 +57,11 @@ extension ChatListViewController: ChatListViewModelDelegate {
             if(!users.isEmpty) {
                 adapter.uiitems = viewModel.uiitems
                 tableView.reloadData()
+            }
+        case .showChatDetail:
+            if let index = viewModel.selectedItemIndex {
+                let data = viewModel.users[index]
+                self.performSegue(withIdentifier: "chat_detail_segue", sender: data)
             }
         }
     }

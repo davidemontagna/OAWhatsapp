@@ -11,9 +11,8 @@
         <!--Navigation Controller-->
         <scene sceneID="uJC-j0-cOc">
             <objects>
-                <navigationController id="xMu-K0-I4e" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="xMu-K0-I4e" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SO9-9y-TzK">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -33,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8We-vq-om1">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -44,11 +43,38 @@
                     <navigationItem key="navigationItem" id="VZh-tM-sAA"/>
                     <connections>
                         <outlet property="tableView" destination="8We-vq-om1" id="v4s-Yh-z5v"/>
+                        <segue destination="PDj-Y6-rL6" kind="show" identifier="chat_detail_segue" id="DNK-ke-pep"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
+        </scene>
+        <!--Chat Detail View Controller-->
+        <scene sceneID="eUC-he-fpw">
+            <objects>
+                <viewController id="PDj-Y6-rL6" customClass="ChatDetailViewController" customModule="AOWhatsapp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="enB-0Z-Oqq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="MeP-k6-vOF">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MAS-gM-Cn4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0MU-wy-xNw"/>
+                    <connections>
+                        <outlet property="tableView" destination="MeP-k6-vOF" id="JBx-fc-BYU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2se-h5-MMm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1098.5507246376812" y="124.55357142857142"/>
         </scene>
     </scenes>
     <resources>
