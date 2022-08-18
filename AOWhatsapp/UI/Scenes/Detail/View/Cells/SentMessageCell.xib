@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -35,13 +34,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Errore di invio" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wA9-3k-hT9">
+                                <rect key="frame" x="76" y="53" width="116" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="sl3-m5-ULx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.52892877637725522" green="0.12000798507218052" blue="0.09408911811456451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <color key="backgroundColor" red="0.15029425829606807" green="0.44707308110502575" blue="0.32398930264397591" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="E8g-pg-ZZs" secondAttribute="trailing" constant="8" id="0Jm-vK-KxY"/>
                             <constraint firstAttribute="bottom" secondItem="E8g-pg-ZZs" secondAttribute="bottom" constant="9" id="1uC-xP-nbE"/>
+                            <constraint firstAttribute="bottom" secondItem="wA9-3k-hT9" secondAttribute="bottom" constant="9" id="3rj-Ox-VdB"/>
                             <constraint firstAttribute="trailing" secondItem="lME-xc-fFI" secondAttribute="trailing" constant="8" id="4xL-cx-7rd"/>
                             <constraint firstAttribute="bottom" secondItem="lME-xc-fFI" secondAttribute="bottom" priority="999" constant="57.5" id="Cm5-O9-tiE"/>
+                            <constraint firstItem="E8g-pg-ZZs" firstAttribute="leading" secondItem="wA9-3k-hT9" secondAttribute="trailing" constant="12" id="LYB-iG-jYM"/>
                             <constraint firstItem="lME-xc-fFI" firstAttribute="top" secondItem="8lL-Dn-Vtm" secondAttribute="top" constant="5" id="NcX-dL-8EC"/>
                             <constraint firstItem="lME-xc-fFI" firstAttribute="leading" secondItem="8lL-Dn-Vtm" secondAttribute="leading" constant="10" id="tbW-rm-RBV"/>
                         </constraints>
@@ -51,26 +61,35 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="I9p-3q-6Mx">
+                        <rect key="frame" x="298" y="55" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="DRi-3j-hhV"/>
+                            <constraint firstAttribute="height" constant="20" id="HrN-qX-Sxh"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="8lL-Dn-Vtm" secondAttribute="trailing" constant="20" id="2Mg-iv-qkd"/>
                     <constraint firstItem="8lL-Dn-Vtm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="55" id="8GI-HR-hbD"/>
                     <constraint firstItem="8lL-Dn-Vtm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="OeZ-C8-VyH"/>
+                    <constraint firstAttribute="trailing" secondItem="I9p-3q-6Mx" secondAttribute="trailing" constant="2" id="bLC-WS-0OM"/>
                     <constraint firstAttribute="bottom" secondItem="8lL-Dn-Vtm" secondAttribute="bottom" constant="1" id="sHJ-Ph-hYN"/>
+                    <constraint firstAttribute="bottom" secondItem="I9p-3q-6Mx" secondAttribute="bottom" constant="10" id="vx8-hO-Fc1"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="dateLabel" destination="E8g-pg-ZZs" id="MHk-iz-Pgk"/>
+                <outlet property="errorMessageLabel" destination="wA9-3k-hT9" id="TP2-NJ-HcE"/>
                 <outlet property="messageBackgroundView" destination="8lL-Dn-Vtm" id="dTA-uF-XS6"/>
                 <outlet property="textMessage" destination="lME-xc-fFI" id="NJN-YF-ZFk"/>
+                <outlet property="triangleImageView" destination="I9p-3q-6Mx" id="g5n-Me-wGS"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="153.68303571428569"/>
+            <point key="canvasLocation" x="137.68115942028987" y="153.01339285714286"/>
         </tableViewCell>
     </objects>
     <resources>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="Image-1" width="600" height="692"/>
     </resources>
 </document>

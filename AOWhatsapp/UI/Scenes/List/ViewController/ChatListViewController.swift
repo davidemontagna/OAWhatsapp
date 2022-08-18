@@ -33,10 +33,14 @@ class ChatListViewController: UIViewController {
         tableView.dataSource = adapter
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.getUsers()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let user = sender as? User, let destination = segue.destination as? ChatDetailViewController {
             destination.viewModel.detailChat = user
-            //destination.delegate = self
         }
     }
 }
@@ -63,6 +67,9 @@ extension ChatListViewController: ChatListViewModelDelegate {
                 let data = viewModel.users[index]
                 self.performSegue(withIdentifier: "chat_detail_segue", sender: data)
             }
+        case .updateUserMessages:
+            adapter.uiitems = viewModel.uiitems
+            tableView.reloadData()
         }
     }
     
@@ -80,4 +87,7 @@ extension ChatListViewController: ChatListViewModelDelegate {
         }
     }
 }
+
+
+
 

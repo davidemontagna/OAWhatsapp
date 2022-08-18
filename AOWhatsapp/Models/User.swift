@@ -12,5 +12,5 @@ struct User {
     let id: Int
     let name: String
     let image: String
-    let messages: [Message]?
+    var messages: [Message]?
 }

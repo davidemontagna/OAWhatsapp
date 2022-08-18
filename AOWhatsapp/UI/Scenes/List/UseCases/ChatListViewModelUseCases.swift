@@ -10,4 +10,5 @@ import Foundation
 enum ChatListViewModelUseCases {
     case getUsers
     case showChatDetail
+    case updateUserMessages
 }

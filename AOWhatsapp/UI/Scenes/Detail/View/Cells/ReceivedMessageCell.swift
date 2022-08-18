@@ -16,9 +16,10 @@ class ReceivedMessageCell: UITableViewCell {
     @IBOutlet weak var textMessage: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     
+    // MARK: - Lifecycle
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        triangleImageView.transform = triangleImageView.transform.rotated(by: .pi / -2)
     }
 
    // MARK: - Public methods

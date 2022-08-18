@@ -21,4 +21,7 @@ struct UserChatArgs {
 struct UserChatMessagesArgs {
     let text: String
     let date: String
+    let errorStatus: Bool
 }
+
+

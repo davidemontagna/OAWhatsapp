@@ -11,9 +11,13 @@ class SentMessageCell: UITableViewCell {
     
     // MARK: - Outlets
 
+    @IBOutlet weak var triangleImageView: UIImageView!
     @IBOutlet weak var messageBackgroundView: UIView!
     @IBOutlet weak var textMessage: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var errorMessageLabel: UILabel!
+    
+    // MARK: - Lifecycle
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,5 +28,6 @@ class SentMessageCell: UITableViewCell {
     func config(with args: UserChatMessagesArgs) {
         textMessage.text = args.text
         dateLabel.text = args.date
+        errorMessageLabel.isHidden = !args.errorStatus
     }
 }

@@ -43,11 +43,11 @@ extension ChatDetailAdapter: UITableViewDataSource {
             cell.config(with: self, and: args)
             return cell
         case .sentMessage(let args):
-            let cell: ReceivedMessageCell = tableView.dequeueReusableCell(for: ReceivedMessageCell.self, for: indexPath)
+            let cell: SentMessageCell = tableView.dequeueReusableCell(for: SentMessageCell.self, for: indexPath)
             cell.config(with: args)
             return cell
         case .receivedMessage(let args):
-            let cell: SentMessageCell = tableView.dequeueReusableCell(for: SentMessageCell.self, for: indexPath)
+            let cell: ReceivedMessageCell = tableView.dequeueReusableCell(for: ReceivedMessageCell.self, for: indexPath)
             cell.config(with: args)
             return cell
         }
