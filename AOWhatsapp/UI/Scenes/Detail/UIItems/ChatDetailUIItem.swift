@@ -8,18 +8,25 @@
 import Foundation
 
 enum ChatDetailUIItem {
-    case header(UserChatArgs)
-    case sentMessage(UserChatMessagesArgs)
-    case receivedMessage(UserChatMessagesArgs)
+    case header(ChatDetailHeaderArgs)
+    case sentMessage(ChatDetailsMessageArgs)
+    case sentLinkMessage(ChatDetailsMessageWithLinkArgs)
+    case receivedMessage(ChatDetailsMessageArgs)
 }
 
-struct UserChatArgs {
+struct ChatDetailHeaderArgs {
     let userImage: String
     let name: String
 }
 
-struct UserChatMessagesArgs {
+struct ChatDetailsMessageArgs {
     let text: String
+    let date: String
+    let errorStatus: Bool
+}
+
+struct ChatDetailsMessageWithLinkArgs {
+    let url: String
     let date: String
     let errorStatus: Bool
 }

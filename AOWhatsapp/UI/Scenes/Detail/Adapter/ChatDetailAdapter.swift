@@ -46,6 +46,10 @@ extension ChatDetailAdapter: UITableViewDataSource {
             let cell: SentMessageCell = tableView.dequeueReusableCell(for: SentMessageCell.self, for: indexPath)
             cell.config(with: args)
             return cell
+        case .sentLinkMessage(let args):
+            let cell: SentLinkMessageCell = tableView.dequeueReusableCell(for: SentLinkMessageCell.self, for: indexPath)
+            cell.config(with: args)
+            return cell
         case .receivedMessage(let args):
             let cell: ReceivedMessageCell = tableView.dequeueReusableCell(for: ReceivedMessageCell.self, for: indexPath)
             cell.config(with: args)

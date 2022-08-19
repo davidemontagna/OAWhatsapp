@@ -24,7 +24,7 @@ class ReceivedMessageCell: UITableViewCell {
 
    // MARK: - Public methods
     
-    func config(with args: UserChatMessagesArgs) {
+    func config(with args: ChatDetailsMessageArgs) {
         textMessage.text = args.text
         dateLabel.text = args.date
     }

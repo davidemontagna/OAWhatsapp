@@ -10,10 +10,10 @@ import UIKit
 
 enum ChatListCellUIItem {
     case header
-    case userChat(ChatArgs)
+    case userChat(ChatListArgs)
 }
 
-struct ChatArgs {
+struct ChatListArgs {
     let userImage: String
     let name: String
     let date: String

@@ -24,17 +24,32 @@ class ChatDetailViewModel: NSObject {
     var detailChat: User!    
     var uiitems: [ChatDetailUIItem] {
         var items: [ChatDetailUIItem] = []
-        items.append(.header(UserChatArgs(userImage: detailChat.image, name: detailChat.name)))
+        items.append(.header(ChatDetailHeaderArgs(userImage: detailChat.image, name: detailChat.name)))
         
         let dateFormatter = DateFormatter()
         if let messages = detailChat.messages {
             return items + messages.map { message in
+                let detector = try! NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue)
+                let urls = detector.matches(in: message.text, options: [], range: NSRange(location: 0, length: message.text.utf16.count))
+
+//                for url in urls {
+//                    guard let range = Range(url.range, in: message.text) else { continue }
+//                    let url = message.text[range]
+//                    print(url)
+//                }
+                
                 let messageDate = getMessageDate(date: message.date, dateFormatter: dateFormatter)
-                switch message.status {                    
+                switch message.status {
                 case .sent, .error:
-                    return .sentMessage(UserChatMessagesArgs(text: message.text, date: messageDate, errorStatus: message.status == .error))
+                    if let url = urls.first {
+                        if let range = Range(url.range, in: message.text) {
+                            let urlStr = message.text[range]
+                            return .sentLinkMessage(ChatDetailsMessageWithLinkArgs(url: String(urlStr), date: messageDate, errorStatus: message.status == .error))
+                        }
+                    }
+                    return .sentMessage(ChatDetailsMessageArgs(text: message.text, date: messageDate, errorStatus: message.status == .error))
                 case .received:
-                    return .receivedMessage(UserChatMessagesArgs(text: message.text, date: messageDate, errorStatus: false))
+                    return .receivedMessage(ChatDetailsMessageArgs(text: message.text, date: messageDate, errorStatus: false))
                 }
             }
         }

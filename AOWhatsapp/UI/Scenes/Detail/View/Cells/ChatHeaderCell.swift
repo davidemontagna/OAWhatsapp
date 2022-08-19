@@ -37,10 +37,9 @@ class ChatHeaderCell: UITableViewCell {
     
     // MARK: - Public methods
     
-    func config(with delegate: ChatHeaderCellDelegate, and args: UserChatArgs) {
+    func config(with delegate: ChatHeaderCellDelegate, and args: ChatDetailHeaderArgs) {
         userImageView.kf.setImage(with: URL(string: args.userImage))
         userNameLabel.text = args.name
         self.delegate = delegate
     }
-    
 }

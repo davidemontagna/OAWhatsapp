@@ -34,7 +34,7 @@ class ChatListViewModel: NSObject {
                 lastMessageText = lastMessage.text
                 lastMessageDate = getMessageDate(date: lastMessage.date, dateFormatter: dateFormatter)
             }
-            return .userChat(ChatArgs(userImage: user.image,
+            return .userChat(ChatListArgs(userImage: user.image,
                                       name: user.name,
                                       date: lastMessageDate,
                                       lastMessage: lastMessageText))

@@ -39,6 +39,7 @@ class ChatDetailViewController: UIViewController {
         tableView.register(cell: SentMessageCell.self)
         tableView.register(cell: ReceivedMessageCell.self)
         tableView.register(cell: ChatHeaderCell.self)
+        tableView.register(cell: SentLinkMessageCell.self)
         adapter.uiitems = viewModel.uiitems
         // Setup TableView
         tableView.delegate = adapter

@@ -22,6 +22,8 @@
 		8E7A381528A5690E005B0C72 /* ChatDetailAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A381428A5690E005B0C72 /* ChatDetailAdapter.swift */; };
 		8E7A381728A56B19005B0C72 /* ChatDetailUIItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A381628A56B19005B0C72 /* ChatDetailUIItem.swift */; };
 		8E9C98BA28A4F33000DF6E82 /* ChatListViewModelUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9C98B928A4F33000DF6E82 /* ChatListViewModelUseCases.swift */; };
+		8EAA01BF28AE9E3F0000E878 /* SentLinkMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA01BD28AE9E3F0000E878 /* SentLinkMessageCell.swift */; };
+		8EAA01C028AE9E3F0000E878 /* SentLinkMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EAA01BE28AE9E3F0000E878 /* SentLinkMessageCell.xib */; };
 		8EB387FA28A402D200B0D207 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB387F928A402D200B0D207 /* AppDelegate.swift */; };
 		8EB387FC28A402D200B0D207 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB387FB28A402D200B0D207 /* SceneDelegate.swift */; };
 		8EB387FE28A402D200B0D207 /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB387FD28A402D200B0D207 /* ChatListViewController.swift */; };
@@ -78,6 +80,8 @@
 		8E7A381428A5690E005B0C72 /* ChatDetailAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailAdapter.swift; sourceTree = "<group>"; };
 		8E7A381628A56B19005B0C72 /* ChatDetailUIItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailUIItem.swift; sourceTree = "<group>"; };
 		8E9C98B928A4F33000DF6E82 /* ChatListViewModelUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModelUseCases.swift; sourceTree = "<group>"; };
+		8EAA01BD28AE9E3F0000E878 /* SentLinkMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentLinkMessageCell.swift; sourceTree = "<group>"; };
+		8EAA01BE28AE9E3F0000E878 /* SentLinkMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SentLinkMessageCell.xib; sourceTree = "<group>"; };
 		8EB387F628A402D200B0D207 /* AOWhatsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOWhatsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB387F928A402D200B0D207 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EB387FB28A402D200B0D207 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -340,6 +344,8 @@
 		8EB3883928A4048500B0D207 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				8EAA01BD28AE9E3F0000E878 /* SentLinkMessageCell.swift */,
+				8EAA01BE28AE9E3F0000E878 /* SentLinkMessageCell.xib */,
 				8E3EA53328A63F4000AAB03C /* SentMessageCell.swift */,
 				8E3EA53428A63F4000AAB03C /* SentMessageCell.xib */,
 				8E3EA54328A6AA9800AAB03C /* ReceivedMessageCell.swift */,
@@ -500,6 +506,7 @@
 				8EB3885128A4191E00B0D207 /* NewGroupCell.xib in Resources */,
 				8E3EA53628A63F4000AAB03C /* SentMessageCell.xib in Resources */,
 				8EB3880628A402D400B0D207 /* LaunchScreen.storyboard in Resources */,
+				8EAA01C028AE9E3F0000E878 /* SentLinkMessageCell.xib in Resources */,
 				8E3EA54128A6444F00AAB03C /* ChatHeaderCell.xib in Resources */,
 				8E3EA54428A6AA9900AAB03C /* ReceivedMessageCell.xib in Resources */,
 				8EB3884D28A418D200B0D207 /* ChatListCell.xib in Resources */,
@@ -593,6 +600,7 @@
 				8E7A381328A568DB005B0C72 /* ChatDetailViewModel.swift in Sources */,
 				8EB387FA28A402D200B0D207 /* AppDelegate.swift in Sources */,
 				8EB387FC28A402D200B0D207 /* SceneDelegate.swift in Sources */,
+				8EAA01BF28AE9E3F0000E878 /* SentLinkMessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

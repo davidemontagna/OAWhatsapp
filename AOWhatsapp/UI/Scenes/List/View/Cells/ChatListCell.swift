@@ -26,7 +26,7 @@ class ChatListCell: UITableViewCell {
     
     // MARK: - Public methods
     
-    func config(with args: ChatArgs) {
+    func config(with args: ChatListArgs) {
         userImageView.kf.setImage(with: URL(string: args.userImage))
         userNameLabel.text = args.name
         lastMessageLabel.text = args.lastMessage
