@@ -20,6 +20,7 @@ class ChatListViewModel: NSObject {
     
     // MARK: - Properties
     
+    var dateMessage = Date()
     var selectedItemIndex: Int?
     var users: [User] = []
     
@@ -32,7 +33,7 @@ class ChatListViewModel: NSObject {
             var lastMessageDate = ""
             if let messages = user.messages, let lastMessage = messages.last {
                 lastMessageText = lastMessage.text
-                lastMessageDate = getMessageDate(date: lastMessage.date, dateFormatter: dateFormatter)
+                lastMessageDate = dateMessage.getMessageDate(date: lastMessage.date, dateFormatter: dateFormatter)
             }
             return .userChat(ChatListArgs(userImage: user.image,
                                       name: user.name,
@@ -56,30 +57,6 @@ class ChatListViewModel: NSObject {
         }
     }
     
-    // MARK: - Private methods
-    
-    private func getMessageDate(date: Date, dateFormatter: DateFormatter) -> String {
-        let diffComponents = Calendar.current.dateComponents([.day], from: date, to: Date())
-        if let days = diffComponents.day {
-            if days == 0 {
-                dateFormatter.dateFormat = "HH:mm"
-                return dateFormatter.string(from: date)
-            }
-            if days == 1 {
-                return "Ieri"
-            }
-            if days > 7 {
-                dateFormatter.dateFormat = "dd/MM/YYYY"
-                return dateFormatter.string(from: date)
-            }
-            if days > 1 {
-                dateFormatter.dateFormat = "EEEE"
-                return dateFormatter.string(from: date)
-            }            
-        }
-        return ""
-    }
-    
     // MARK: - Public methods
     
     func showDetail(for index: Int) {
@@ -87,5 +64,4 @@ class ChatListViewModel: NSObject {
         delegate?.onSuccess(.showChatDetail)
     }
 }
-
 
