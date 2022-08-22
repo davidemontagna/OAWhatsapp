@@ -12,6 +12,7 @@ enum ChatDetailUIItem {
     case sentMessage(ChatDetailsMessageArgs)
     case sentLinkMessage(ChatDetailsMessageWithLinkArgs)
     case receivedMessage(ChatDetailsMessageArgs)
+    case receivedLinkMessage(ChatDetailsMessageWithLinkArgs)
 }
 
 struct ChatDetailHeaderArgs {

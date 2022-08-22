@@ -1,5 +1,5 @@
 //
-//  SentLinkMessageCell.swift
+//  ReceivedLinkMessageCell.swift
 //  AOWhatsapp
 //
 //  Created by Davide Montagna on 12/08/22.
@@ -8,7 +8,7 @@
 import UIKit
 import LinkPresentation
 
-class SentLinkMessageCell: UITableViewCell {
+class ReceivedLinkMessageCell: UITableViewCell {
     
     // MARK: - Outlets
 
@@ -29,7 +29,7 @@ class SentLinkMessageCell: UITableViewCell {
 
    // MARK: - Public methods
     
-    func config(with args: ChatDetailsMessageWithLinkArgs) {
+    func config(with args: ChatDetailsMessageWithLinkArgs) {        
         stackView.arrangedSubviews.forEach { $0.removeFromSuperview() }
         
         let url = URL(string: args.url)!

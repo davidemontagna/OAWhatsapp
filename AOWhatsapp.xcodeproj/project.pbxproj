@@ -22,6 +22,8 @@
 		8E7A381528A5690E005B0C72 /* ChatDetailAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A381428A5690E005B0C72 /* ChatDetailAdapter.swift */; };
 		8E7A381728A56B19005B0C72 /* ChatDetailUIItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A381628A56B19005B0C72 /* ChatDetailUIItem.swift */; };
 		8E9C98BA28A4F33000DF6E82 /* ChatListViewModelUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9C98B928A4F33000DF6E82 /* ChatListViewModelUseCases.swift */; };
+		8EA8DA5728B36B510027698A /* ReceivedLinkMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA8DA5528B36B510027698A /* ReceivedLinkMessageCell.swift */; };
+		8EA8DA5828B36B510027698A /* ReceivedLinkMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA8DA5628B36B510027698A /* ReceivedLinkMessageCell.xib */; };
 		8EAA01BF28AE9E3F0000E878 /* SentLinkMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA01BD28AE9E3F0000E878 /* SentLinkMessageCell.swift */; };
 		8EAA01C028AE9E3F0000E878 /* SentLinkMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EAA01BE28AE9E3F0000E878 /* SentLinkMessageCell.xib */; };
 		8EB387FA28A402D200B0D207 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB387F928A402D200B0D207 /* AppDelegate.swift */; };
@@ -80,6 +82,8 @@
 		8E7A381428A5690E005B0C72 /* ChatDetailAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailAdapter.swift; sourceTree = "<group>"; };
 		8E7A381628A56B19005B0C72 /* ChatDetailUIItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailUIItem.swift; sourceTree = "<group>"; };
 		8E9C98B928A4F33000DF6E82 /* ChatListViewModelUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModelUseCases.swift; sourceTree = "<group>"; };
+		8EA8DA5528B36B510027698A /* ReceivedLinkMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivedLinkMessageCell.swift; sourceTree = "<group>"; };
+		8EA8DA5628B36B510027698A /* ReceivedLinkMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReceivedLinkMessageCell.xib; sourceTree = "<group>"; };
 		8EAA01BD28AE9E3F0000E878 /* SentLinkMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentLinkMessageCell.swift; sourceTree = "<group>"; };
 		8EAA01BE28AE9E3F0000E878 /* SentLinkMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SentLinkMessageCell.xib; sourceTree = "<group>"; };
 		8EB387F628A402D200B0D207 /* AOWhatsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOWhatsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -348,6 +352,8 @@
 				8EAA01BE28AE9E3F0000E878 /* SentLinkMessageCell.xib */,
 				8E3EA53328A63F4000AAB03C /* SentMessageCell.swift */,
 				8E3EA53428A63F4000AAB03C /* SentMessageCell.xib */,
+				8EA8DA5528B36B510027698A /* ReceivedLinkMessageCell.swift */,
+				8EA8DA5628B36B510027698A /* ReceivedLinkMessageCell.xib */,
 				8E3EA54328A6AA9800AAB03C /* ReceivedMessageCell.swift */,
 				8E3EA54228A6AA9800AAB03C /* ReceivedMessageCell.xib */,
 				8E3EA53E28A6444F00AAB03C /* ChatHeaderCell.swift */,
@@ -509,6 +515,7 @@
 				8EAA01C028AE9E3F0000E878 /* SentLinkMessageCell.xib in Resources */,
 				8E3EA54128A6444F00AAB03C /* ChatHeaderCell.xib in Resources */,
 				8E3EA54428A6AA9900AAB03C /* ReceivedMessageCell.xib in Resources */,
+				8EA8DA5828B36B510027698A /* ReceivedLinkMessageCell.xib in Resources */,
 				8EB3884D28A418D200B0D207 /* ChatListCell.xib in Resources */,
 				8EB3880328A402D400B0D207 /* Assets.xcassets in Resources */,
 				8EB3880128A402D200B0D207 /* Main.storyboard in Resources */,
@@ -588,6 +595,7 @@
 				8EB3884728A4177900B0D207 /* ChatListViewModel.swift in Sources */,
 				8E3EA53528A63F4000AAB03C /* SentMessageCell.swift in Sources */,
 				8E7A380F28A552EA005B0C72 /* Date+Extensions.swift in Sources */,
+				8EA8DA5728B36B510027698A /* ReceivedLinkMessageCell.swift in Sources */,
 				8E9C98BA28A4F33000DF6E82 /* ChatListViewModelUseCases.swift in Sources */,
 				8E7A381528A5690E005B0C72 /* ChatDetailAdapter.swift in Sources */,
 				8EB387FE28A402D200B0D207 /* ChatListViewController.swift in Sources */,
